@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poopins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  color: #fff;
+}
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("img/bean4.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+.container {
+  padding: 10px 7%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border-bottom: 2px solid rgba(66, 66, 66, 0.582);
+}
+.logo {
+  margin: 10px 0 5px 40px;
+  width: 5.5%;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 40px;
+}
+
+nav ul li a {
+  color: #fff;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.4s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+a:hover::after:active {
+  background-color: #ff004f;
+}
+.header-text {
+  margin-top: 16%;
+  font-size: 30px;
+  letter-spacing: 0.2rem;
+}
+.header-text h1 {
+  font-size: 42px;
+  margin-top: 18px;
+  letter-spacing: 0.3rem;
+}
+.header-text h1 span {
+  color: #ff004f;
+}
+/* --------------------Products-------------------- */
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.7rem;
+  margin-top: 3em;
+  text-align: center;
+  font-size: 40px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 9em 0;
+}
+.card1,
+.card2,
+.card3,
+.card4 {
+  width: 22%;
+  height: 400px;
+  background-color: rgba(245, 245, 220, 0.808);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.roastBean1 {
+  width: 180px;
+  margin: 68px auto -120px;
+  display: block;
+  position: relative;
+  top: -120px;
+  transition: 0.5s;
+}
+.roastBean1:hover {
+  width: 228px;
+  top: -160px;
+  margin: 68px auto -130px;
+}
+.roastBean2 {
+  width: 180px;
+  margin: 68px auto -117px;
+  display: block;
+  position: relative;
+  top: -108px;
+  transition: 0.5s;
+}
+.roastBean2:hover {
+  width: 210px;
+  top: -145px;
+}
+.roastBean3 {
+  width: 155px;
+  margin: 68px auto -153px;
+  display: block;
+  position: relative;
+  top: -132px;
+  transition: 0.5s;
+}
+.roastBean3:hover {
+  width: 208px;
+  top: -185px;
+  margin: 68px auto -190px;
+}
+.roastBean4 {
+  width: 90px;
+  margin: 68px auto -127px;
+  display: block;
+  position: relative;
+  top: -118px;
+  transition: 0.5s;
+}
+.roastBean4:hover {
+  width: 119px;
+  top: -158px;
+  margin: 68px auto -155px;
+}
+h5 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+.card-title {
+  margin-top: 1.7em;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(54, 50, 47);
+  letter-spacing: 0.1rem;
+}
+section {
+  margin: 20px 20px 5px 20px;
+  font-size: 17px;
+  text-align: center;
+}
+/* -----------------------------services---------------------------- */
+#services {
+  margin: 10em 0;
+}
+.services-container1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+.services-container2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+.service1,
+.service4 {
+  margin-left: 7em;
+}
+.service3,
+.service5 {
+  margin-right: 7em;
+}
+.service1,
+.service2,
+.service3,
+.service4,
+.service5 {
+  width: 20%;
+  height: 300px;
+  background-color: rgba(245, 245, 220, 0.808);
+  border-radius: 12px;
+  transition: 0.5s;
+}
+.service1:hover,
+.service2:hover,
+.service3:hover,
+.service4:hover,
+.service5:hover {
+  width: 20.2%;
+  transform: translateY(-20px);
+}
+#services .card-title {
+  margin-top: 0.5em;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(54, 50, 47);
+  letter-spacing: 0.1rem;
+}
+#services a {
+  text-decoration: none;
+  color: white;
+}
+.img-container {
+  width: 100%;
+  height: 37%;
+}
+.service-img1 {
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: -3px;
+}
+.service-img2 {
+  max-width: 180px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: -32px;
+}
+.service-img3 {
+  max-width: 230px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: -55px;
+}
+.service-img4 {
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 5px;
+}
+.service-img5 {
+  max-width: 110px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: -4px;
+}
+#services section {
+  margin: 20px 20px 5px 20px;
+  font-size: 17px;
+  text-align: center;
+}
+
+/* ----------------------------------------- services --------------------------------------------------- */
+/* -------------------about------------------- */
+#about {
+  padding: 10px 0;
+  margin: 80px 0 100px 0;
+  color: rgb(241, 241, 241);
+}
+.row {
+  /* used in contact us too */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+h3 {
+  font-size: 40px;
+  letter-spacing: 0.2rem;
+  margin-top: 1.3em;
+  color: rgb(255, 251, 251);
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.about-col-2 {
+  flex-basis: 63%;
+}
+.about-col-2 p {
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: justify;
+}
+.about-col-2 p span {
+  font-size: 40px;
+  color: #ababab;
+  font-weight: 600;
+}
+/* --------------- footer ---------------- */
+#contactUs {
+  padding: 10px 0;
+  color: rgb(241, 241, 241);
+}
+
+.container-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5em 0;
+}
+
+.coffeeCup img {
+  margin-left: 4em;
+  width: 85%;
+  border-radius: 30px;
+}
+
+.footer1 {
+  text-align: center;
+}
+.social-icons img {
+  margin-top: 30px;
+  transition: transform 0.5s;
+  display: inline-block;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+.social-icons img:hover {
+  transform: translateY(-13px);
+  transition: 0.5s;
+}
+.content-left p {
+  margin-top: 30px;
+  font-size: 19px;
+  color: aqua;
+}
+/* ------------------------- form ---------------------------- */
+.sub-titles {
+  font-size: 60px;
+  color: #ddcaca;
+}
+#contact .container {
+  display: flex;
+}
+.btn {
+  padding: 20px 150px;
+  background-color: lightslategray;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.btn:hover {
+  background-color: rgb(199, 181, 158);
+  transition: 0.2s;
+}
+.content-right {
+  flex-basis: 100%;
+}
+.content-right form {
+  width: 100%;
+  text-align: center;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0px;
+  outline: none;
+  background-color: #262626;
+  padding: 20px;
+  margin: 5px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+/* --------------------------------------------for smaller screen --------------------------------------------- */
+@media only screen and (max-width: 675px) {
+  #header {
+    background-size: cover;
+    background-position: center top;
+    background-image: url("img/phoneBackground.jpg");
+  }
+  .logo {
+    margin: 10px 0 5px 40px;
+    width: 20%;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .container {
+    padding: 10px 4%;
+  }
+  .header-text {
+    margin-top: 35%;
+    font-size: 25px;
+    letter-spacing: 0.2rem;
+  }
+  .header-text h1 {
+    font-size: 35px;
+    margin-top: 25px;
+    letter-spacing: 0.3rem;
+  }
+  h2 {
+    margin-top: 2em;
+    font-size: 35px;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10em 0;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 20%;
+    height: 350px;
+    background-color: rgba(245, 245, 220, 0.808);
+    border-radius: 12px;
+  }
+  .roastBean1 {
+    width: 160px;
+    margin: 68px auto -145px;
+    display: block;
+    position: relative;
+    top: -121px;
+    transition: 0.5s;
+  }
+  .roastBean1:hover {
+    width: 228px;
+    top: -152px;
+  }
+  .roastBean2 {
+    width: 162px;
+    margin: 68px auto -145px;
+    display: block;
+    position: relative;
+    top: -114px;
+    transition: 0.5s;
+  }
+  .roastBean2:hover {
+    width: 230px;
+    top: -145px;
+  }
+  .roastBean3 {
+    width: 140px;
+    margin: 68px auto -177px;
+    display: block;
+    position: relative;
+    top: -137px;
+    transition: 0.5s;
+  }
+  .roastBean3:hover {
+    width: 208px;
+    top: -168px;
+    margin: 68px auto -200px;
+  }
+  .roastBean4 {
+    width: 80px;
+    margin: 68px auto -153px;
+    display: block;
+    position: relative;
+    top: -127px;
+    transition: 0.5s;
+  }
+  section {
+    font-size: 11px;
+  }
+}
